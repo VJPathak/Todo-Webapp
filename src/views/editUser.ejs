@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Update Data</header>
+      <form action="/editUser" class="form" method="POST">
+
+        <div class="input-box">
+          <label>Name</label>
+          <input type="text" placeholder="Enter Email Address" name="name" value="<%= data.name %>"/>
+        </div>
+
+        <div class="input-box">
+          <label>Email</label>
+          <input type="text" placeholder="Enter Password" name="email" value="<%= data.email %>"/>
+        </div>
+
+        <div class="input-box">
+            <label>Phone Number</label>
+            <input type="text" placeholder="Enter Email Address" name="phno" value="<%= data.phno %>"/>
+        </div>
+
+        
+        <button>Update Details</button>
+      </form>
+    </section>
+  </body>
+</html>

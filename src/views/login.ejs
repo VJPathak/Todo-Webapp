@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+   
+    <section class="container">
+      <header>Login Form</header>
+      <center><b><%= data %></b></center>
+      <form action="/login" class="form" method="POST">
+        <div class="input-box">
+          <label>Email</label>
+          <input type="text" placeholder="Enter Email Address" name="email" />
+        </div>
+
+        <div class="input-box">
+          <label>Password</label>
+          <input type="text" placeholder="Enter Password" name="pass" />
+        </div>
+
+        <button>Save</button>
+      </form>
+    </section>
+  </body>
+</html>

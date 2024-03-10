@@ -1,0 +1,130 @@
+<html>
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    
+   
+      <script>
+       
+      function stringlength(inputtxt, minlength, maxlength)
+      { 
+        var field = inputtxt.value; 
+        var mnlen = minlength;
+        var mxlen = maxlength;
+
+        if(field.length<mnlen || field.length> mxlen)
+        { 
+          alert("Please input the userid between " +mnlen+ " and " +mxlen+ " characters");
+          return false;
+        }
+        else
+        { 
+        alert('Your userid have accepted.');
+        return true;
+        }
+      }
+
+
+    </script>
+
+    <section class="container"> 
+<center>
+      <% if (data != null) { %>
+        <%= data %>
+        <% } %>
+</center>
+      <header>Registration Form/ Edit Form/ Add User Form</header>
+      <form action="/signup" class="form" method="POST">
+
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" name="name" placeholder="Enter full name">
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" placeholder="Enter email address" name="email">
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" placeholder="Enter phone number" name="phno">
+          </div>
+          <!-- <div class="input-box">
+            <label>Birth Date</label>
+            <input type="date" placeholder="Enter birth date" required />
+          </div> -->
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Password</label>
+            <input type="password" placeholder="Enter Password" name="pass" />
+          </div>
+          <div class="input-box">
+            <label>Confirm Password</label>
+            <input type="password" placeholder="Enter Password" name="cmpass"/>
+          </div>
+
+          
+          <!-- <div class="input-box">
+            <label>Birth Date</label>
+            <input type="date" placeholder="Enter birth date" required />
+          </div> -->
+        </div>
+
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" value = "1" checked />
+              <label for="check-male">male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" value = "0" />
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" value = "01"/>
+              <label for="check-other">prefer not to say</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <!-- <label>Address</label>
+          <input type="text" placeholder="Enter street address" required />
+          <input type="text" placeholder="Enter street address line 2" required /> -->
+          <div class="column">
+            <div class="select-box">
+              
+              <select name="state" id="state">
+                <option hidden>State</option>
+                <option value="gujarat">Gujarat</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="maharashtra">Maharashtra</option>
+              </select>
+            </div>
+            <!-- <input type="text" placeholder="Enter your city" required /> -->
+          </div>
+          <div class="column">
+            <div class="select-box">
+              <select name="city" id="city">
+                <option hidden>City</option>     
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Pune">Pune</option>
+                <option value="Mumbai">Mumbai</option>
+              </select>
+            </div>
+            <!-- <input type="text" placeholder="Enter your city" required /> -->
+          </div> 
+        </div>
+        <button type="submit" nclick="matchPassword()" onclick="stringlength(pass,8,12)">Submit</button> 
+      </form>
+    </section>
+  </body>
+</html>

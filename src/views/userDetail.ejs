@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>User Detail</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="css/style2.css" />
+    
+</head>
+<body>
+    
+    <div class="card-container">
+	
+        <h3><%= data.name %></h3>
+        <!-- <h6>Gujarat</h6>
+        <h6>Ahmedabad</h6>
+        <p>Male</p> -->
+        <p><b>Ph. No. : </b><%= data.phno %></p>
+        <br>
+        <div class="buttons">
+            <a href="mailto:<%= data.email %>">
+            <button class="primary">
+                Contact Through email!
+            </button>
+            </a>
+            
+        </div>
+        
+    </div>
+    
+    
+
+
+</body>
+</html>
