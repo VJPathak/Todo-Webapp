@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+
+</head>
+<body>
+
+<table border="0" width="100%">
+	<tr align="center">
+		<td width="70%">
+			<div class="logo-text">
+			Data<strong data-new-link="true">Sync</strong>
+			</div>
+		</td>
+		<td width="15%" align="right"><a href="/login" class="button1">Login</a></td>
+		<td width="15%" align="left"><a href="/signup" class="button1">Signup</a></td>
+	</tr>
+</table>
+
+<br>
+
+<% if(data == "") { %>
+	<center><b> <%= 'Pl Login/Signup To Continue..!'%>  &nbsp; &nbsp;<%=':)' %> </b></center>
+	<% } %>
+
+	<% if(data == "New User") { %>
+		
+<table width="100%" border="0">
+	<tr>
+		<td align="center" width="30%"> Filter <span style='font-size:25px;'>&#128466;</span></td>
+
+		<td align="center"> <a href="/userList">Add User <span style='font-size:25px;'>&#43;</span></a></td>
+
+	</tr>
+</table>
+		<% } else{ %>
+
+	
+
+
+
+<table width="100%" border="0">
+  	<tr>
+  		<td align="center" width="30%"> Filter <span style='font-size:25px;'>&#128466;</span></td>
+
+  		<td align="center"> <a href="/userList">Add User <span style='font-size:25px;'>&#43;</span></a></td>
+
+  	</tr>
+  </table>
+
+  <center>
+<section>
+
+  
+
+  <div class="list">
+
+    <ul>
+
+      <li>
+      	<table width="100%" border="0">
+      		<tr align="center">
+      			<td width="10%"><b>Sr. No.</b></td>
+      			<td width="25%"><b>Username</b></td>
+      			<td width="30%"><b>Email</b></td>
+      			<td width="20%"><b>Phone. No.</b></td>
+      			<td width="15%"><b>Actions</b></td>
+      		</tr>
+      	</table>
+      </li>
+
+      <!-- <li>
+      	<table width="100%" border="0">
+      		<tr align="center">
+      			<td width="10%">1</td>
+      			<td width="25%">Vashishth Pathak</td>
+      			<td width="30%">pathakvashishth05gmail.com</td>
+      			<td width="20%">7284928661</td>
+      			<td width="15%">
+      				<span style='font-size:25px;'>&#128393;</span>
+      				<span style='font-size:25px;'>&#43;</span>
+      				<span style='font-size:25px;'>&#128465;</span>
+      			</td>
+      		</tr>
+      	</table>
+  	  </li> -->
+		
+
+		<% for (let i = 0; i < data.length; i++) { %>
+  	  <li>
+      	<table width="100%" border="0">
+      		<tr align="center">
+      			<td width="10%">  <%= i+1 %>  </td>
+      			<td width="25%">  <%= data[i].name %>  </td>
+      			<td width="30%">  <%= data[i].email %>  </td>
+      			<td width="20%">  <%= data[i].phno %>  </td>
+      			<td width="15%">
+					<a href='editUser?id=<%= data[i].id %>&name=<%= data[i].name %>&email=<%= data[i].email %>&phno=<%= data[i].phno %>'><span style='font-size:25px;'>&#128393;</span></a>
+      				<!-- <a href='userDetail?id=<%= data[i].id %>&name=<%= data[i].name %>&email=<%= data[i].email %>&phno=<%= data[i].phno %>'><span style='font-size:25px;'>&#43;</span></a> -->
+      				<a href='deleteUser?id=<%= data[i].id %>'><span style='font-size:25px;'>&#128465;</span></a>
+      			</td>
+      		</tr>
+      	</table>
+  	  </li>
+		<% } %>
+
+		
+
+    </ul>
+
+  </div>
+  <div class="animation"></div>
+
+
+</section>
+</center>
+
+<% } %>
+
+
+
+</body>
+</html>
