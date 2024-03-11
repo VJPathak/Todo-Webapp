@@ -38,7 +38,7 @@ Other endpoints are: /userList, /editUser, /deleteUser
 Steps to be followed:
 1) Download the project or clone it
 2) Install the libaries mentioned in package.json file of root folder
-3) Follow this path "nodejs-Project/src/config/mydemodb-c3b5b-firebase-adminsdk-y7tm4-4f24d8dbe5.json" and update the data with your firebase credentials
+3) Follow this path "nodejs-Project/src/config/firestoreCredentials.json" and update the data with your firebase credentials
 4) Run with command nodemon app.js
 5) Copy the link "http://localhost:3000/homepage", "http://localhost:3000/signup", "http://localhost:3000/login" in your browser to start our project
 
