@@ -34,3 +34,13 @@ Our main endpoints are:
     3) /homepage
 
 Other endpoints are: /userList, /editUser, /deleteUser
+
+Steps to be followed:
+1) Download the project or clone it
+2) Install the libaries mentioned in package.json file of root folder
+3) Run with command nodemon app.js
+4) Copy the link "http://localhost:3000/homepage", "http://localhost:3000/signup", "http://localhost:3000/login" in your browser to start our project
+
+Thats it, Have a good day :)
+
+
