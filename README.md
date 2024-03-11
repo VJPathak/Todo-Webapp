@@ -1,8 +1,8 @@
 Project Name: Data Sync
 
-Frontend Technology Used: HTML and Basic CSS
-Backend Technology Used: Nodejs and its libaries
-Database: Firestore(noSQL DB)
+Frontend Technology Used: HTML and Basic CSS<br>
+Backend Technology Used: Nodejs and its libaries<br>
+Database: Firestore(noSQL DB)<br>
 
 Description:
 
