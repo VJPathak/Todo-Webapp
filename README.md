@@ -1,26 +1,26 @@
-Project Name: Data Sync
+**Project Name:** Data Sync
 
-Frontend Technology Used: HTML and Basic CSS<br>
-Backend Technology Used: Nodejs and its libaries<br>
-Database: Firestore(noSQL DB)<br>
+**Frontend Technology Used:** HTML and Basic CSS<br>
+**Backend Technology Used:** Nodejs and its libaries<br>
+**Database:** Firestore(noSQL DB)<br>
 
-Description:
+**Description:**
 
     This Node.js web app enables us to create, read, update, and delete items with a user-friendly interface. Firebase provides real-time data storage, ensuring our entries are accessible from anywhere. New entries include data such as name, email and phone number.
 
-Features:
+**Features:**
 
-    Create: Effortlessly add new entries.
+    **Create:** Effortlessly add new entries.
 
-    Read: View all your current entries in a clear and organized manner.
+    **Read**: View all your current entries in a clear and organized manner.
 
-    Update: Modify existing entries items to reflect changing priorities.
+    **Update:** Modify existing entries items to reflect changing priorities.
 
-    Delete: Remove completed tasks to keep your list streamlined.
+    **Delete:** Remove completed tasks to keep your list streamlined.
 
-    Appealing design: The application boasts a visually appealing interface to enhance your user experience.
+   ** Appealing design:** The application boasts a visually appealing interface to enhance your user experience.
     
-How to run the file locally?
+**How to run the file locally?**
 
     Open package.json file from root folder and download the mentioned modules. After this step this our web app should work smoothly. 
 
@@ -28,14 +28,14 @@ How to run the file locally?
 
 **Start from our root endpoint /homepage**
 
-Our main endpoints are:
+**Our main endpoints are:**
     1) /login
     2) /signup
     3) /homepage
 
-Other endpoints are: /userList, /editUser, /deleteUser
+**Other endpoints are:** /userList, /editUser, /deleteUser
 
-Steps to be followed:
+**Steps to be followed:**
 1) Download the project or clone it
 2) Install the libaries mentioned in package.json file of root folder
 3) Follow this path "nodejs-Project/src/config/firestoreCredentials.json" and update the data with your firebase credentials
