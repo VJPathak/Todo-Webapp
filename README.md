@@ -25,3 +25,12 @@ How to run the file locally?
     Open package.json file from root folder and download the mentioned modules. After this step this wen app should work smoothly. 
 
 **app.js is root file of our project, run it to execute my project**
+
+**Start from our root endpoint /homepage**
+
+Our main endpoints are:
+    1) /login
+    2) /signup
+    3) /homepage
+
+Other endpoints are: /userList, /editUser, /deleteUser
