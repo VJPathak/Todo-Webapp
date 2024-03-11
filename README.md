@@ -22,7 +22,7 @@ Features:
     
 How to run the file locally?
 
-    Open package.json file from root folder and download the mentioned modules. After this step this wen app should work smoothly. 
+    Open package.json file from root folder and download the mentioned modules. After this step this our web app should work smoothly. 
 
 **app.js is root file of our project, run it to execute my project**
 
