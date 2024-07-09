@@ -41,7 +41,7 @@
 Thats it, Have a good day :)
 
 
- **  For any query contact: pathakvashishth05@gmail.com ** 
+<b>For any query contact: pathakvashishth05@gmail.com</b>
 
 
 
