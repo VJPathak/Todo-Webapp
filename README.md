@@ -38,9 +38,10 @@
 4) Run with command nodemon app.js
 5) Copy the link "http://localhost:3000/formpage in your browser to start our project
 
- **  For any query contact: pathakvashishth05@gmail.com**
-
 Thats it, Have a good day :)
+
+
+ **  For any query contact: pathakvashishth05@gmail.com ** 
 
 
 
