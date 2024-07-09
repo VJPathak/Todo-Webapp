@@ -1,4 +1,4 @@
-**Project Name:** Kodekamp Assignment
+**Project Name:** KodeKamp Assignment
 
 **Frontend Technology Used:** HTML and Basic CSS<br>
 **Backend Technology Used:** Nodejs and its libaries<br>
