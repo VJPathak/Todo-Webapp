@@ -1,4 +1,4 @@
-**Project Name:** Data Sync
+**Project Name:** Kodekamp Assignment
 
 **Frontend Technology Used:** HTML and Basic CSS<br>
 **Backend Technology Used:** Nodejs and its libaries<br>
